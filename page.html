@@ -1,27 +1,49 @@
-<style>
-  .flex {
-  display: flex;
-  justify-content: center; /* 가로 가운데 정렬 */
-  align-items: center; /* 세로 가운데 정렬 */
-}
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Align</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* 가로 가운데 정렬 */
+      align-items: center; /* 세로 가운데 정렬 */
+      flex-direction: column; /* 컨텐츠를 수직 방향으로 정렬합니다. */
+    }
+    .text-center {
+      text-align: center;
+    }
+    details ul {
+      text-align: center; /* 리스트 항목을 가운데 정렬합니다. */
+    }
+    details li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    summary {
+          cursor: pointer;
+          width: fit-content; /* 요소의 너비를 컨텐츠에 맞게 설정합니다. */
+          margin: 0 auto; /* 가운데 정렬을 위해 margin을 auto로 설정합니다. */
+    }
 
-.text-center {
-  text-align: center; /* 텍스트 가운데 정렬 */
-}
-</style>
+  </style>
+</head>
 
 
-<div className="flex justify-center">
-  <div className="px-4 md:px-6 py-6 space-y-6 text-center">
-    <div className="space-y-2">
-      <h1 className="text-3xl font-bold">Math Archive</h1>
-      <p className="text-gray-500 dark:text-gray-400">고3 수학 / 수능 및 모의고사 모음</p>
+<div class="flex justify-center">
+  <div class="px-4 md:px-6 py-6 space-y-6 text-center">
+    <div class="space-y-2">
+      <h1 class="text-3xl font-bold">Math Archive</h1>
+      <p class="text-gray-500 dark:text-gray-400">고3 수학 / 수능 및 모의고사 모음</p>
+      <p class="text-gray-500 dark:text-gray-400">2015 개정 교육과정이 적용된 2021년부터 지원합니다.</p>
     </div>
-    <div className="space-y-4 md:col-span-2">
-      <div className="flex flex-col gap-2">
-        <details>
-          <summary className="text-xl font-bold">2023</summary>
-          <ul className="space-y-2 border border-gray-200 rounded-lg p-2">
+    <div class="space-y-4 md:col-span-2">
+      <div class="flex flex-col gap-2">
+        <details><br>
+          <summary class="text-xl font-bold">2023</summary>
+          <ul class="space-y-2 border border-gray-200 rounded-lg p-2">
             <li>
               <Link href="#">Problem Set 1</Link>
               <span aria-label="Download" role="img">
@@ -54,9 +76,9 @@
             </li>
           </ul>
         </details>
-        <details>
-          <summary className="text-xl font-bold">2022</summary>
-          <ul className="space-y-2 border border-gray-200 rounded-lg p-2">
+        <details><br>
+          <summary class="text-xl font-bold">2022</summary>
+          <ul class="space-y-2 border border-gray-200 rounded-lg p-2">
             <li>
               <Link href="#">Problem Set 1</Link>
               <span aria-label="Download" role="img">
@@ -89,79 +111,9 @@
             </li>
           </ul>
         </details>
-        <details>
-          <summary className="text-xl font-bold">2021</summary>
-          <ul className="space-y-2 border border-gray-200 rounded-lg p-2">
-            <li>
-              <Link href="#">Problem Set 1</Link>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-              <span> - answer</span>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-            </li>
-            <li>
-              <Link href="#">Problem Set 2</Link>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-              <span> - answer</span>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-            </li>
-            <li>
-              <Link href="#">Problem Set 3</Link>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-              <span> - answer</span>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-            </li>
-          </ul>
-        </details>
-        <details>
-          <summary className="text-xl font-bold">2020</summary>
-          <ul className="space-y-2 border border-gray-200 rounded-lg p-2">
-            <li>
-              <Link href="#">Problem Set 1</Link>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-              <span> - answer</span>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-            </li>
-            <li>
-              <Link href="#">Problem Set 2</Link>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-              <span> - answer</span>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-            </li>
-            <li>
-              <Link href="#">Problem Set 3</Link>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-              <span> - answer</span>
-              <span aria-label="Download" role="img">
-                ⬇️
-              </span>
-            </li>
-          </ul>
-        </details>
-        <details>
-          <summary className="text-xl font-bold">2019</summary>
-          <ul className="space-y-2 border border-gray-200 rounded-lg p-2">
+        <details><br>
+          <summary class="text-xl font-bold">2021</summary>
+          <ul class="space-y-2 border border-gray-200 rounded-lg p-2">
             <li>
               <Link href="#">Problem Set 1</Link>
               <span aria-label="Download" role="img">
